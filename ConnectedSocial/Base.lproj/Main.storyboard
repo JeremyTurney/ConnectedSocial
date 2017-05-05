@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ConnectedSocial" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,50 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btr-4H-JHa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Connected-4" translatesAutoresizingMaskIntoConstraints="NO" id="noP-T3-pmW">
+                                        <rect key="frame" x="67" y="5" width="240" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="88t-hc-wa6"/>
+                                            <constraint firstAttribute="height" constant="77" id="sTy-Vl-mIV"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.61568627450980395" green="0.73333333333333328" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="noP-T3-pmW" firstAttribute="centerX" secondItem="btr-4H-JHa" secondAttribute="centerX" id="EgP-gz-dRb"/>
+                                    <constraint firstAttribute="height" constant="85" id="aQ4-uG-0Y2"/>
+                                    <constraint firstItem="noP-T3-pmW" firstAttribute="top" secondItem="btr-4H-JHa" secondAttribute="top" constant="5" id="gbY-hp-PmJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ldq-Zd-Tcz">
+                                <rect key="frame" x="0.0" y="602" width="375" height="65"/>
+                                <color key="backgroundColor" red="0.61723473243464055" green="0.73333333333333328" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="jBC-s6-9oA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ldq-Zd-Tcz" secondAttribute="trailing" id="Hlz-c8-eoP"/>
+                            <constraint firstAttribute="trailing" secondItem="btr-4H-JHa" secondAttribute="trailing" id="UBp-Zu-hdT"/>
+                            <constraint firstItem="Ldq-Zd-Tcz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="W6C-V7-TqP"/>
+                            <constraint firstItem="btr-4H-JHa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Wxe-Eu-krx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ldq-Zd-Tcz" secondAttribute="bottom" id="XHw-kD-VIe"/>
+                            <constraint firstItem="btr-4H-JHa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hZe-X8-x0y"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Connected-4" width="565" height="92"/>
+    </resources>
 </document>
